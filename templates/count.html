@@ -1,0 +1,13 @@
+<h1>There are total {{ totalwords }} words.</h1>
+
+<h2>Your text is</h2>
+
+<p>{{ text }}</p>
+
+<h1>Individual word count</h1>
+
+{% for word,count in wordcount %}
+<h3>  {{ word }} : {{ count }}  </h3>
+{% endfor%}
+
+<a href="{% url 'home' %}">Count Again</a>

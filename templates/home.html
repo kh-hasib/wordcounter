@@ -1,0 +1,7 @@
+<h1>Welcome To Word Counter</h1>
+To learn about the websote click <a href="{% url 'about' %}">here</a>
+
+<form action="{% url 'count' %}" method="post"> {% csrf_token %}
+  <textarea name="fulltext" rows="8" cols="80"></textarea> <br>
+  <input type="submit" name="counter" value="Count!">
+</form>
